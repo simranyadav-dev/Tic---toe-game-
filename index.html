@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="loader-content">
+            <div class="loader-title">🎮 Tic-Tac-Toe</div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div class="progress-text" id="progressText">Loading... 0%</div>
+        </div>
+    </div>
+
+    <!-- Main Game Container -->
+    <div class="container">
+        <div class="game-screen" id="gameScreen">
+            <div class="game-container">
+                <!-- Theme Toggle -->
+                <div class="theme-toggle" id="themeToggle">
+                    <span class="theme-icon">🌙</span>
+                </div>
+
+                <!-- Game Header -->
+                <div class="game-header">
+                    <h1 class="game-title">Tic-Tac-Toe</h1>
+                    <p class="game-subtitle">Challenge yourself or play against AI</p>
+                </div>
+
+                <!-- Game Mode Selection -->
+                <div class="mode-selection">
+                    <div class="mode-btn active" data-mode="human">
+                        👥 Human vs Human
+                    </div>
+                    <div class="mode-btn" data-mode="computer">
+                        🤖 vs Computer
+                    </div>
+                </div>
+
+                <!-- Game Status -->
+                <div class="game-status">
+                    <div class="status-text" id="statusText">Game Ready!</div>
+                    <div class="current-player" id="currentPlayer">Player X</div>
+                </div>
+
+                <!-- Game Board -->
+                <div class="game-board" id="gameBoard">
+                    <div class="cell" data-index="0"></div>
+                    <div class="cell" data-index="1"></div>
+                    <div class="cell" data-index="2"></div>
+                    <div class="cell" data-index="3"></div>
+                    <div class="cell" data-index="4"></div>
+                    <div class="cell" data-index="5"></div>
+                    <div class="cell" data-index="6"></div>
+                    <div class="cell" data-index="7"></div>
+                    <div class="cell" data-index="8"></div>
+                </div>
+
+                <!-- Game Controls -->
+                <div class="game-controls">
+                    <button class="btn btn-primary" id="newGameBtn">New Game</button>
+                    <button class="btn btn-secondary" id="resetBtn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="result-screen" id="resultScreen">
+        <div class="result-container">
+            <div class="result-animation" id="resultAnimation">🎉</div>
+            <div class="result-title" id="resultTitle">You Win!</div>
+            <div class="result-message" id="resultMessage">
+                Congratulations! You've mastered the game of Tic-Tac-Toe!
+            </div>
+            <div class="game-controls">
+                <button class="btn btn-primary" id="playAgainBtn">Play Again</button>
+                <button class="btn btn-secondary" id="backToMenuBtn">Back to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="footer-text">
+            © 2025 <strong>Made by You</strong> - All rights reserved. Elegant Tic-Tac-Toe Game
+        </div>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
