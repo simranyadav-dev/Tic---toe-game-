@@ -1,6 +1,3 @@
-# Tic-toe game
+# Tic-Tac-Toe game
+Link: (https://tic-toe-game-murex.vercel.app/)
 
-Coming soon.........
-
-Busy with some work. currently working on some project 
-##  Busy with work .... Comig soonnn
